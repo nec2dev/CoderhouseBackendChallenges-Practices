@@ -1,299 +1,70 @@
-const Contenedor = require("./challengueDeliverable002");
+const Contenedor = require("./challengueDeliverable002.js").default;
 
 const run = async function () {
   let contenedor = new Contenedor("products.txt");
+
   contenedor.save({
-    categoria: 1,
-    stock: 10,
-    nombre: "Wow! Box001",
+    title: "Wow! Box001",
     precio: 560.0,
-    precioAnterior: 620.0,
-    imagen: "../assets/img/Box001.png",
-    medidas: "15 x 15 x 10 cm",
-    peso: 3.2,
-    personas: 4,
-    numpiezas: 8,
-    piezas: [
-      "Brownie",
-      "Lemon Pie",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de chocolate",
-      "Alfajorcito de chocolate",
-    ],
-    sabores: [
-      "ch",
-      "li",
-      "v-ddl",
-      "v-ddl",
-      "v-ddl",
-      "v-ddl",
-      "ch-ddl",
-      "ch-ddl",
-    ],
-  });
+    thumbnail: "../assets/img/Box001.png"
+  })
 
   contenedor.save({
-    categoria: 1,
-    stock: 10,
-    nombre: "Wow! Box002",
-    precio: 940.5,
-    precioAnterior: 1020.0,
-    imagen: "../assets/img/Box002.png",
-    medidas: "15 x 15 x 10 cm",
-    peso: 3.2,
-    personas: 4,
-    numpiezas: 10,
-    piezas: [
-      "Brownie",
-      "Lemon Pie",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de chocolate",
-      "Alfajorcito de chocolate",
-    ],
-    sabores: [
-      "ch",
-      "li",
-      "v-ddl",
-      "v-ddl",
-      "v-ddl",
-      "v-ddl",
-      "ch-ddl",
-      "ch-ddl",
-    ],
-  });
+    title: "Wow! Box002",
+    price: 940.5,
+    thumbnail: "../assets/img/Box002.png"
+  })
 
   contenedor.save({
-    categoria: 1,
-    stock: 10,
-    nombre: "Wow! Box003",
-    precio: 320.0,
-    precioAnterior: 420.0,
-    imagen: "../assets/img/Box003.png",
-    medidas: "15 x 15 x 10 cm",
-    peso: 3.9,
-    personas: 4,
-    numpiezas: 6,
-    piezas: [
-      "Brownie",
-      "Lemon Pie",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de chocolate",
-      "Alfajorcito de chocolate",
-    ],
-    sabores: [
-      "ch",
-      "li",
-      "v-ddl",
-      "v-ddl",
-      "v-ddl",
-      "v-ddl",
-      "ch-ddl",
-      "ch-ddl",
-    ],
-  });
+    title: "Wow! Box003",
+    price: 320.0,
+    thumbnail: "../assets/img/Box003.png"
+  })
 
   contenedor.save({
-    categoria: 2,
-    stock: 10,
-    nombre: "Wow! Box004",
-    precio: 450.0,
-    precioAnterior: 620.0,
-    imagen: "../assets/img/Box004.png",
-    medidas: "15 x 15 x 10 cm",
-    peso: 5.2,
-    personas: 7,
-    numpiezas: 22,
-    piezas: [
-      "Brownie",
-      "Lemon Pie",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de chocolate",
-      "Alfajorcito de chocolate",
-    ],
-    sabores: [
-      "ch",
-      "li",
-      "v-ddl",
-      "v-ddl",
-      "v-ddl",
-      "v-ddl",
-      "ch-ddl",
-      "ch-ddl",
-    ],
-  });
+    title: "Wow! Box004",
+    price: 450.0,
+    thumbnail: "../assets/img/Box004.png"
+  })
 
   contenedor.save({
-    categoria: 2,
-    stock: 10,
-    nombre: "Wow! Box005",
-    precio: 500.0,
-    precioAnterior: 620.0,
-    imagen: "../assets/img/Box005.png",
-    medidas: "15 x 15 x 10 cm",
-    peso: 3.2,
-    personas: 4,
-    numpiezas: 8,
-    piezas: [
-      "Brownie",
-      "Lemon Pie",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de chocolate",
-      "Alfajorcito de chocolate",
-    ],
-    sabores: [
-      "ch",
-      "li",
-      "v-ddl",
-      "v-ddl",
-      "v-ddl",
-      "v-ddl",
-      "ch-ddl",
-      "ch-ddl",
-    ],
-  });
+    title: "Wow! Box005",
+    price: 500.0,
+    thumbnail: "../assets/img/Box005.png"
+  })
 
   contenedor.save({
-    categoria: 2,
-    stock: 10,
-    nombre: "Wow! Box006",
-    precio: 1028.0,
-    precioAnterior: 1320.0,
-    imagen: "../assets/img/Box006.png",
-    medidas: "15 x 15 x 10 cm",
-    peso: 3.2,
-    personas: 4,
-    numpiezas: 8,
-    piezas: [
-      "Brownie",
-      "Lemon Pie",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de chocolate",
-      "Alfajorcito de chocolate",
-    ],
-    sabores: [
-      "ch",
-      "li",
-      "v-ddl",
-      "v-ddl",
-      "v-ddl",
-      "v-ddl",
-      "ch-ddl",
-      "ch-ddl",
-    ],
-  });
+    title: "Wow! Box006",
+    price: 1028.0,
+    thumbnail: "../assets/img/Box006.png"
+  })
 
   contenedor.save({
-    categoria: 1,
-    stock: 10,
-    nombre: "Wow! Box007",
-    precio: 560.0,
-    precioAnterior: 620.0,
-    imagen: "../assets/img/Box007.png",
-    medidas: "15 x 15 x 10 cm",
-    peso: 3.2,
-    personas: 4,
-    numpiezas: 8,
-    piezas: [
-      "Brownie",
-      "Lemon Pie",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de maicena DDL",
-      "Alfajorcito de chocolate",
-      "Alfajorcito de chocolate",
-    ],
-    sabores: [
-      "ch",
-      "li",
-      "v-ddl",
-      "v-ddl",
-      "v-ddl",
-      "v-ddl",
-      "ch-ddl",
-      "ch-ddl",
-    ],
-  });
+    title: "Wow! Box007",
+    price: 560.0,
+    thumbnail: "../assets/img/Box007.png"
+  })
 
   contenedor.save({
-    categoria: 2,
-    stock: 7,
-    nombre: "Wow! Box008",
-    precio: 1360.0,
-    precioAnterior: 1620.0,
-    imagen: "../assets/img/Box008.png",
-    medidas: "15 x 15 x 10 cm",
-    peso: 3.2,
-    personas: 4,
-    numpiezas: 5,
-    piezas: [
-      "Brownie",
-      "Lemon Pie",
-      "Marquise de Chocolate",
-      "Roll de Canela",
-      "Scon de queso",
-    ],
-    sabores: [
-      "ch",
-      "li",
-      "v-ddl",
-      "v-ddl",
-      "v-ddl",
-      "v-ddl",
-      "ch-ddl",
-      "ch-ddl",
-    ],
-  });
+    title: "Wow! Box008",
+    price: 1360.0,
+    thumbnail: "../assets/img/Box008.png"
+  })
 
   contenedor.save({
-    categoria: 3,
-    stock: 24,
-    nombre: "Wow! Box009",
+    title: "Wow! Box009",
     precio: 360.0,
-    precioAnterior: 520.0,
-    imagen: "../assets/img/Box009.png",
-    medidas: "15 x 15 x 10 cm",
-    peso: 3.2,
-    personas: 2,
-    numpiezas: 3,
-    piezas: ["Brownie", "Marquise de Chocolate", "Roll de Canela"],
-    sabores: [
-      "ch",
-      "li",
-      "v-ddl",
-      "v-ddl",
-      "v-ddl",
-      "v-ddl",
-      "ch-ddl",
-      "ch-ddl",
-    ],
-  });
+    thumbnail: "../assets/img/Box009.png"
+  })
+
   console.log(contenedor.getById(2));
   console.log(contenedor.getById(5));
   console.log(contenedor.getAll());
   console.log(contenedor.deleteById(1));
   console.log(contenedor.deleteById(6));
   console.log(contenedor.getAll());
-  contenedor.deleteAll();
-  console.log(contenedor.getAll());
+  // contenedor.deleteAll();
+  // console.log(contenedor.getAll());
 };
 
 run();

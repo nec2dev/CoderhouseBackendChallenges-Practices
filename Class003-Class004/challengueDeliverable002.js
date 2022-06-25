@@ -1,8 +1,8 @@
 /*>> Consigna: Implementar programa que contenga una clase llamada Contenedor que reciba el nombre del archivo con el que va a trabajar e implemente los siguientes métodos:*/
 const fs = require('fs')
 class Contenedor {
-    constructor(nombreArchivo) {
-        this.nombreArchivo = nombreArchivo;
+    constructor(nombre) {
+        this.nombreArchivo = nombre
         this.countID = 0
         this.contenido = []
     }
@@ -32,8 +32,8 @@ class Contenedor {
     }
 
     /*getAll(): Object[] - Devuelve un array con los objetos presentes en el archivo.*/
-    getAll() {
-        return this.contenido;
+    async getAll() {
+        return this.contenido
     }
 
     /*deleteById(Number): void - Elimina del archivo el objeto con el id buscado.*/
