@@ -1,7 +1,7 @@
 const Contenedor = require('./challengueDeliverable002.js');
 
 const run = async function () {
-  let contenedor = new Contenedor('products.txt');
+  let contenedor = new Contenedor('./Class003-Class004/products.txt');
 
   contenedor.save({
     title: "Wow! Box001",
