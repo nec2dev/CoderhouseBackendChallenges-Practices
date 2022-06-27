@@ -1,7 +1,7 @@
-const Contenedor = require("./challengueDeliverable002.js").default;
+const Contenedor = require('./challengueDeliverable002.js');
 
 const run = async function () {
-  let contenedor = new Contenedor("products.txt");
+  let contenedor = new Contenedor('products.txt');
 
   contenedor.save({
     title: "Wow! Box001",
@@ -60,11 +60,11 @@ const run = async function () {
   console.log(contenedor.getById(2));
   console.log(contenedor.getById(5));
   console.log(contenedor.getAll());
-  console.log(contenedor.deleteById(1));
-  console.log(contenedor.deleteById(6));
+  console.log(contenedor.deleteById(9));
+  console.log(contenedor.deleteById(5));
   console.log(contenedor.getAll());
-  // contenedor.deleteAll();
-  // console.log(contenedor.getAll());
+  contenedor.deleteAll();
+  console.log(contenedor.getAll());
 };
 
 run();

@@ -2,12 +2,12 @@
 const fs = require('fs')
 class Contenedor {
     constructor(nombre) {
-        this.nombreArchivo = nombre
+        this.nombre = nombre
         this.countID = 0
         this.contenido = []
     }
     async write() { 
-        await fs.promises.writeFile(this.fileName, JSON.stringify(this.contenido))
+        await fs.promises.writeFile(this.nombre, JSON.stringify(this.contenido))
     }
 
     /*save(Object): Number - Recibe un objeto, lo guarda en el archivo, devuelve el id asignado.*/
