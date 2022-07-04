@@ -10,7 +10,7 @@ const Contenedor = require("./contenedor");
 const express = require('express');
 const app = express();
 const PORT = 8080;
-const PRODUCTOS = new contenedor("./products.txt")
+const PRODUCTOS = new Contenedor("./productos.txt")
 
 PRODUCTOS.init();
 app.listen(PORT);
@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
 
 /*Ruta get '/productos' que devuelva un array con todos los productos disponibles en 
 el servidor*/
-app.get("/products", (req, res) => {
+app.get("/productos", (req, res) => {
   res.send(PRODUCTOS.getAll());
 });
 

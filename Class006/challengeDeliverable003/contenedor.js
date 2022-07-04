@@ -18,19 +18,6 @@ class Contenedor {
     }
   }
 
-  async write() {
-    await fs.promises.writeFile(this.nombre, JSON.stringify(this.contenido));
-  }
-
-  /*save(Object): Number - Recibe un objeto, lo guarda en el archivo, devuelve el id asignado.*/
-  save(objeto) {
-    this.countID++;
-    objeto["id"] = this.countID;
-    this.contenido.push(objeto);
-    this.write();
-    return `El id asignado del objeto añadido es ${this.countID}`;
-  }
-
   /*getById(Number): Object - Recibe un id y devuelve el objeto con ese id, o null si no está.*/
   getById(id) {
     let resultado;
@@ -50,23 +37,6 @@ class Contenedor {
     return this.contenido;
   }
 
-  /*deleteById(Number): void - Elimina del archivo el objeto con el id buscado.*/
-  deleteById(id) {
-    let resultado;
-    if (this.contenido.length > 0) {
-      let nuevoContenido = this.contenido.filter((objeto) => objeto.id !== id);
-      this.contenido = nuevoContenido;
-      this.write();
-      resultado = `El objeto con id ${id} ha sido eliminado`;
-    }
-    return resultado;
-  }
-
-  /*deleteAll(): void - Elimina todos los objetos presentes en el archivo.*/
-  async deleteAll() {
-     this.contenido = this.contenido.splice(0, this.contenido.length);
-     this.write();
-   }
 }
 
 module.exports = Contenedor;
