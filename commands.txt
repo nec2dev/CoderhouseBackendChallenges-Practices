@@ -1,0 +1,1 @@
+­­­­npm init -y; npm i express; echo "node_modules" >> .gitignore; touch server.js;
