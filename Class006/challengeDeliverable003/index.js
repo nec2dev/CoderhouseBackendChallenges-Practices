@@ -10,7 +10,7 @@ const Contenedor = require("./contenedor");
 const express = require('express');
 const app = express();
 const PORT = 8080;
-const PRODUCTOS = new Contenedor("productos.txt")
+const PRODUCTOS = new Contenedor("./Class006/challengeDeliverable003/productos.txt")
 
 PRODUCTOS.init();
 app.listen(PORT);
