@@ -1,3 +1,4 @@
+// Datos y Variables
 /*Definir variables variables que almacenen los siguiente datos:
 Un nombre: “pepe”
 Una edad: 25
