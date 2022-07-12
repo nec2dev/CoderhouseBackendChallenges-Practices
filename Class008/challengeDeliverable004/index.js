@@ -10,12 +10,13 @@ una API RESTful de productos. En detalle, que incorpore las siguientes rutas:*/
 en 1, y que se irá incrementando a medida de que se incorporen productos. Ese id será 
 utilizado para identificar un producto que va a ser listado en forma individual.*/
 
+const Contenedor = require("./controller/contenedor.js");
 const express = require("express");
 const app = express();
 const port = '8080';
 const { Router } = express;
 const router = Router();
-const productos = new Contenedor(__dirname + "/data/productos.json");
+const productos = new Contenedor(__dirname + "/model/productos.json");
 const serverExpress = app.listen(port, () => {
   console.log(`Server running on port ${serverExpress.address().port}`);
 });
@@ -23,13 +24,13 @@ const serverExpress = app.listen(port, () => {
 serverExpress.on('error', (error) => {`Error en el servidor: ${error}`});
 app.use(express.json()); 
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static('views'));
-app.use('/api/productos', rutas.allProducts);
-app.use('/api/productos', rutas.idProduct);
-app.use('/api/productos', rutas.newProduct);
-app.use('/api/productos', rutas.newProductHtml);
-app.use('/api/productos', rutas.updateProduct);
-app.use('/api/productos', rutas.deleteProduct);
+app.use(express.static('view'));
+// app.use('/api/productos', rutas.allProducts);
+// app.use('/api/productos', rutas.idProduct);
+// app.use('/api/productos', rutas.newProduct);
+// app.use('/api/productos', rutas.newProductHtml);
+// app.use('/api/productos', rutas.updateProduct);
+// app.use('/api/productos', rutas.deleteProduct);
 
 // GET '/api/productos' -> devuelve todos los productos.
 router.get("/", (req, res) => {
