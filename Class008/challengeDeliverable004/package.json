@@ -1,25 +1,18 @@
 {
-  "name": "challengedeliverable004",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nec2dev/CoderhouseBackendChallenges-Practices/tree/main/Class008/challengeDeliverable004"
-  },
-  "author": "Nahuel Ezequiel correa",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nec2dev/CoderhouseBackendChallenges-Practices/tree/main/Class008/challengeDeliverable004"
-  },
-  "homepage": "https://github.com/nec2dev/CoderhouseBackendChallenges-Practices/tree/main/Class008/challengeDeliverable004",
   "dependencies": {
     "express": "^4.18.1",
+    "modules": "^0.4.0",
     "moment": "^2.29.4",
     "nodemon": "^2.0.19"
-  }
+  },
+  "name": "challengedeliverable004",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
