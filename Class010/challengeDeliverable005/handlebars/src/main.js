@@ -42,7 +42,6 @@ app.post('/productos', (req, res) => {
 })
 app.get('/productos', (req, res) => {
     const prods = ProductosAPI.toListAll()
-
     res.render("vista", {
         productos: prods,
         hayProductos: prods.length

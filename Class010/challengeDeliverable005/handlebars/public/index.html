@@ -10,10 +10,10 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 
-<body>
-    <div class="container mt-3">
-        <div class="jumbotron vh-100">
-            <h1 class="text-secondary">Ingrese Producto</h1>
+<body class="bg-light">
+    <div class="container mt-3 bg-secondary " style="--bs-bg-opacity: .3;">
+        <div class="jumbotron vh-100 m-4 p-4">
+            <h1 class="text-primary">Ingrese Producto</h1>
             <br>
             <form action="/productos" method="POST">
                 <div class="form-group">
@@ -25,13 +25,13 @@
                     <input id="precio" class="form-control" type="number" step="0.01" name="price" required>
                 </div>
                 <div class="form-group">
-                    <label for="foto" class="fw-bold fst-italic">Thumbnail</label>
+                    <label for="foto" class="fw-bold fst-italic">Foto URL</label>
                     <input id="foto" class="form-control" type="url" name="thumbnail">
                 </div>
                 <button class="btn btn-success mt-3">Enviar</button>
+                <div class="mb-4"></div>
+                <a href="/productos" type="button" class="btn btn-primary">Ver productos</button>
             </form>
-            <div class="mb-4"></div>
-            <a href="/productos" type="button" class="btn btn-primary">Ver productos</button>
         </div>
     </div>
 </body>
