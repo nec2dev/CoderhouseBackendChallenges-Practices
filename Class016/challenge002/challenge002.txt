@@ -1,0 +1,6 @@
+NODE + SQLITE3
+Realizar un proyecto en Node.js que se conecte a una base de datos SQLite3 y ejecute las mismas acciones que las planteadas en el desafío anterior.
+
+Notas: 
+- Crear un único archivo ejecutable a través de node.js que realice lo pedido. Considerar que estos son procesos asincrónicos que devuelven promesas y deben ser anidados para mantener el orden de operación. Utilizar la sintaxis async/await.
+- Agregar como primera acción que si existe la tabla la borre (drop), así, al ejecutar estas mismas tareas, comienzo de cero sin errores y datos residuales.

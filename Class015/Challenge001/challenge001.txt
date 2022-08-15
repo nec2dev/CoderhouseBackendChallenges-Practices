@@ -1,0 +1,4 @@
+INSTALACIÓN
+Realizar las siguientes operaciones:
+Instalar XAMPP e iniciar el motor de base de datos MySQL/MariaDB.
+Instalar MySQL Workbench y crear una conexión de usuario administrador hacia la base de datos.
